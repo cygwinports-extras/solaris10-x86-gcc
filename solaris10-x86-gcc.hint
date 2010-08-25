@@ -1,0 +1,3 @@
+category: Devel
+requires: solaris10-x86-gcc-core solaris10-x86-gcc-g++ solaris10-x86-gcc-fortran
+sdesc: "GCC for Solaris 10 x86 toolchain (meta-package)"
