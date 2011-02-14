@@ -1,4 +1,3 @@
-# OpenSolaris: i386-pc-solaris2.11
 TOOLCHAIN_TARGET="i386-pc-solaris2.10"
 ORIG_PN="gcc"
 inherit toolchain
@@ -30,10 +29,9 @@ PKG_NAMES="${PN} ${PN}-core ${PN}-g++ ${PN}-fortran"
 #
 # ./pkgrip SUNWarc SUNWcsl SUNWcslr SUNWhea SUNWlibm SUNWlibms SUNWlibmsr
 #
-# (OpenSolaris: SUNWcslr and SUNWlibmsr are no longer separate pkgs)
-#
 # Then transfer the tarballs to Cygwin and unpack them into the sysroot:
 #
+# mkdir -p /usr/i386-pc-solaris2.10/sys-root;
 # for p in SUNWarc SUNWcsl SUNWcslr SUNWhea SUNWlibm SUNWlibms SUNWlibmsr; \
 #   do tar jxf $p.tar.bz2 -C /usr/i386-pc-solaris2.10/sys-root; done
 
